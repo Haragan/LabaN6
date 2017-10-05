@@ -40,48 +40,51 @@ public class MainActivity extends AppCompatActivity {
         }
 
         protected void onDraw(Canvas canvas) {
-            canvas.drawARGB(80, 102, 204, 255);//Заливает канвас цветом
-
-
-            p.setColor(Color.RED); //Делает кисть красной
-            p.setStrokeWidth(10);//Делает ширину кисти 10
-            canvas.drawPoint(50, 50, p);//Рисование точки
-            canvas.drawLine(100, 100, 500, 50, p);//Рисование линии
-            canvas.drawCircle(100, 200, 50, p);//Рисование круга
-            canvas.drawRect(200, 150, 400, 200, p);//Рисование прямоугольника
-            rect.set(259, 300, 350, 500);//Установление координат для прямоугольника
-            canvas.drawRect(rect, p);//Рисование прямоугольника
-
-
-
+//            canvas.drawARGB(80, 102, 204, 255);//Заливает канвас цветом
+//
+//
+//            p.setColor(Color.RED); //Делает кисть красной
+//            p.setStrokeWidth(10);//Делает ширину кисти 10
+//            canvas.drawPoint(50, 50, p);//Рисование точки
+//            canvas.drawLine(100, 100, 500, 50, p);//Рисование линии
+//            canvas.drawCircle(100, 200, 50, p);//Рисование круга
+//            canvas.drawRect(200, 150, 400, 200, p);//Рисование прямоугольника
+//            rect.set(259, 300, 350, 500);//Установление координат для прямоугольника
+//            canvas.drawRect(rect, p);//Рисование прямоугольника
 
 
 
-            canvas.drawARGB(80, 102, 204, 255);//Заливает канвас цветом
-            p.setColor(Color.RED);
-            p.setStrokeWidth(10);
-            canvas.drawPoints(points, p);//Рисует точки, из массива points
-            canvas.drawLines(points1, p);//Рисует точки, из массива points1
 
-            p.setColor(Color.GREEN);//Делает кисть зеленой
-            canvas.drawRoundRect(rectF, 20, 20, p);//Прямоугольник
-            rectF.offset(0, 150);//Смещаемся по Y на 150
-            canvas.drawOval(rectF, p);//Овал
-            rectF.offset(0, 150);//Смещаемся по Y
-            rectF.inset(0, -25);
-            canvas.drawArc(rectF, 90, 270, true, p);//Рисовать Дугу
-            rectF.offset(0, 150);//Смещаемся по Y
-            canvas.drawArc(rectF, 90, 270, false, p);//Рисовать Дугу
-            p.setStrokeWidth(3);//Делает ширину кисти 3
-            canvas.drawLine(150, 450, 150, 600, p);
 
-            p.setColor(Color.BLUE);//Делает кисть синей
-            p.setTextSize(30);//Делает ширину кисти 30
-            canvas.drawText("text left", 150, 500, p);//Рисуем текст по левому краю
-            p.setTextAlign(Paint.Align.CENTER);//Устанавливаем по центру краю
-            canvas.drawText("text center", 150, 520, p);
-            p.setTextAlign(Paint.Align.RIGHT);//Рисуем текст по правому краю
-            canvas.drawText("text right", 150, 550, p);
+
+//            canvas.drawARGB(80, 102, 204, 255);//Заливает канвас цветом
+//            p.setColor(Color.RED);
+//            p.setStrokeWidth(10);
+//            canvas.drawPoints(points, p);//Рисует точки, из массива points
+//            canvas.drawLines(points1, p);//Рисует точки, из массива points1
+//
+//            p.setColor(Color.GREEN);//Делает кисть зеленой
+//            canvas.drawRoundRect(rectF, 20, 20, p);//Прямоугольник
+//            rectF.offset(0, 150);//Смещаемся по Y на 150
+//            canvas.drawOval(rectF, p);//Овал
+//            rectF.offset(0, 150);//Смещаемся по Y
+//            rectF.inset(0, -25);
+//            canvas.drawArc(rectF, 90, 270, true, p);//Рисовать Дугу
+//            rectF.offset(0, 150);//Смещаемся по Y
+//            canvas.drawArc(rectF, 90, 270, false, p);//Рисовать Дугу
+//            p.setStrokeWidth(3);//Делает ширину кисти 3
+//            canvas.drawLine(150, 450, 150, 600, p);
+//
+//            p.setColor(Color.BLUE);//Делает кисть синей
+//            p.setTextSize(30);//Делает ширину кисти 30
+//            canvas.drawText("text left", 150, 500, p);//Рисуем текст по левому краю
+//            p.setTextAlign(Paint.Align.CENTER);//Устанавливаем по центру краю
+//            canvas.drawText("text center", 150, 520, p);
+//            p.setTextAlign(Paint.Align.RIGHT);//Рисуем текст по правому краю
+//            canvas.drawText("text right", 150, 550, p);
+
+
+
 
 
 
@@ -118,6 +121,5 @@ public class MainActivity extends AppCompatActivity {
             canvas.drawLines(six, p); //Рисуем 6 угольник
 
         }
-
     }
 }
