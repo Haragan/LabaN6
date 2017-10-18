@@ -20,11 +20,13 @@ public class MainActivity extends AppCompatActivity {
 
     class DrawView extends View {
 
-        private Paint p;
-        private Rect rect;
-        private RectF rectF;
+        private Paint p; // Кисть
+        private Rect rect; //Прямоугольник
+        private RectF rectF; //Прямоугольник  из Float(вещественные)
         private float[] points;
         private float[] points1;
+        //Класс строк, где строка не пересоздается при добавлении
+        // в нее чего-нибудь, а добавляется к предыдущему
         private StringBuilder sb;
 
         public DrawView(Context context) {
